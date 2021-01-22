@@ -152,6 +152,7 @@ export default function App() {
       flag6 === true
     ) {
       setOpmsg("Your Birthdate is a Palindrome Number in format: " + print);
+      setOpmsg2("");
     } else {
       setOpmsg("Your Birthdate is not a Palindrome Number");
       checkNext();
@@ -172,7 +173,6 @@ export default function App() {
     gif = document.getElementById("img");
     gif.setAttribute("src", image);
     gif.style.display = "block";
-
     setTimeout(() => {
       document.getElementById("Processmsg").innerHTML = "";
       gif = document.getElementById("img");
@@ -194,8 +194,8 @@ export default function App() {
       <div id="Processmsg"> </div>
       <img id="img" src="" alt=""></img>
       <div id="box">
-        <div> {opmsg} </div>
-        <div> {opmsg2} </div>
+        <div id="res"> {opmsg} </div>
+        <div id="res"> {opmsg2} </div>
       </div>
     </div>
   );
